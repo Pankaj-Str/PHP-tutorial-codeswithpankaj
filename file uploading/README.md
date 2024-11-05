@@ -1,4 +1,4 @@
-# simple file upload feature using PHP:
+# File upload feature using PHP:
 
 Step 1: Create an HTML Form for File Upload
 
