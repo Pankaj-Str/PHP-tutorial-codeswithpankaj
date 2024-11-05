@@ -7,7 +7,7 @@ Step 1: Create an HTML Form for File Upload
 	3.	Set the form method to POST since files cannot be sent with GET.
 
 File: upload_form.html
-
+```php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,7 @@ File: upload_form.html
     </form>
 </body>
 </html>
-
+```
 Step 2: Handle File Upload in PHP
 
 	1.	Create a PHP script that handles the uploaded file from the HTML form.
@@ -34,7 +34,7 @@ Step 2: Handle File Upload in PHP
 	5.	Use PHP’s move_uploaded_file() function to move the uploaded file to the target directory.
 
 File: upload.php
-
+```php
 <?php
 if (isset($_POST['submit'])) {
     // Check if the file was uploaded without errors
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
     echo "No file uploaded.";
 }
 ?>
-
+```
 Step 3: Create an uploads Directory
 
 	•	Ensure that the uploads directory exists in the same directory as upload.php.
