@@ -26,7 +26,7 @@ fclose($file);
 ?>
 ```
 In this example:
-	•	If the file example.txt does not exist, die() will stop the code and print “Unable to open file!”.
+- If the file example.txt does not exist, die() will stop the code and print “Unable to open file!”.
 
 3. Custom Error Handling with set_error_handler()
 
@@ -46,8 +46,8 @@ echo($undefinedVariable);
 ?>
 ```
 Explanation:
-	•	set_error_handler("customError") registers customError as the custom handler.
-	•	When $undefinedVariable is used, PHP triggers a notice, which is handled by customError.
+- set_error_handler("customError") registers customError as the custom handler.
+- When $undefinedVariable is used, PHP triggers a notice, which is handled by customError.
 
 4. Exception Handling with try-catch
 
@@ -67,8 +67,8 @@ try {
 ?>
 ```
 Explanation:
-	•	throw new Exception("Number is too low."); raises an exception if $number is less than 10.
-	•	catch (Exception $e) catches the exception and displays an error message.
+- throw new Exception("Number is too low."); raises an exception if $number is less than 10.
+- catch (Exception $e) catches the exception and displays an error message.
 
 5. Creating a Custom Exception Class
 
@@ -90,9 +90,9 @@ try {
 ?>
 ```
 Explanation:
-	•	CustomException extends PHP’s Exception class.
-	•	The errorMessage() function provides a custom error format.
-	•	throw new CustomException(...) throws a CustomException, which is caught and handled.
+- CustomException extends PHP’s Exception class.
+- The errorMessage() function provides a custom error format.
+- throw new CustomException(...) throws a CustomException, which is caught and handled.
 
 6. Handling Multiple Exceptions
 
@@ -124,7 +124,7 @@ try {
 }
 ?>
 ```
-	•	The finally block always executes, regardless of whether an exception occurred.
+- The finally block always executes, regardless of whether an exception occurred.
 
 8. Using error_log() to Log Errors
 
@@ -143,6 +143,6 @@ echo($undefinedVariable);
 ?>
 ```
 Explanation:
-	•	error_log("Error...", 3, "error_log.log") writes the error to a log file (error_log.log).
-	•	Only the message “An error occurred. Please check the logs.” is displayed to the user.
+- error_log("Error...", 3, "error_log.log") writes the error to a log file (error_log.log).
+- Only the message “An error occurred. Please check the logs.” is displayed to the user.
 
