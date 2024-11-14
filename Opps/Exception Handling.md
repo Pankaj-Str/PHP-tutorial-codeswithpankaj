@@ -13,8 +13,8 @@ ini_set('display_errors', 1);
 ?>
 ```
 In this Example
-•	error_reporting(E_ALL): Sets PHP to report all types of errors.
-•	ini_set('display_errors', 1): Displays errors on the screen. It is recommended to turn this off in a production environment.
+	•	error_reporting(E_ALL): Sets PHP to report all types of errors.
+	•	ini_set('display_errors', 1): Displays errors on the screen. It is recommended to turn this off in a production environment.
 
 2. Basic Error Handling Using die()
 
