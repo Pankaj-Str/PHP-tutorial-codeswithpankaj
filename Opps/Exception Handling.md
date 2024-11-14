@@ -1,4 +1,4 @@
-Here’s a step-by-step guide to Error and Exception Handling in PHP
+# Error and Exception Handling in PHP
 
 PHP provides mechanisms to handle both errors and exceptions to ensure that your application runs smoothly and gracefully handles unexpected issues. Below is a guide on how to set up error and exception handling in PHP.
 
@@ -14,8 +14,8 @@ ini_set('display_errors', 1);
 ```
 In this Example
 
-	•	error_reporting(E_ALL): Sets PHP to report all types of errors.
-	•	ini_set('display_errors', 1): Displays errors on the screen. It is recommended to turn this off in a production environment.
+1. error_reporting(E_ALL): Sets PHP to report all types of errors.
+2. ini_set('display_errors', 1): Displays errors on the screen. It is recommended to turn this off in a production environment.
 
 2. Basic Error Handling Using die()
 
