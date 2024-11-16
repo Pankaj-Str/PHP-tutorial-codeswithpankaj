@@ -4,15 +4,16 @@ Regular expressions (regex) are patterns used to match character combinations in
 
 Step 1: Understand the Syntax
 
-	1.	Delimiters: Regular expressions are enclosed within delimiters, often /.
+- Delimiters: Regular expressions are enclosed within delimiters, often /.
+
 Example: /pattern/
-	2.	Modifiers: Placed after the pattern, e.g., i for case-insensitivity.
+- Modifiers: Placed after the pattern, e.g., i for case-insensitivity.
 Example: /pattern/i
 
 Step 2: Basic Pattern Matching
 
 Example: Check if a string contains “hello”
-
+```php
 <?php
 $pattern = "/hello/"; // Regular expression
 $text = "Hello, welcome to PHP!";
@@ -23,10 +24,10 @@ if (preg_match($pattern, $text)) {
     echo "No match found.";
 }
 ?>
-
+```
 Explanation:
-	•	/hello/ matches “hello”.
-	•	preg_match() checks if the pattern exists in the string.
+- /hello/ matches “hello”.
+- preg_match() checks if the pattern exists in the string.
 
 Step 3: Case-Insensitive Match
 
