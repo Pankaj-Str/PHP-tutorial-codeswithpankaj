@@ -32,7 +32,7 @@ Explanation:
 Step 3: Case-Insensitive Match
 
 Example: Match “hello” regardless of case
-
+```php
 <?php
 $pattern = "/hello/i"; // 'i' modifier for case-insensitivity
 $text = "HELLO, world!";
@@ -43,14 +43,14 @@ if (preg_match($pattern, $text)) {
     echo "No match found.";
 }
 ?>
-
+```
 Explanation:
-	•	The i modifier makes the pattern case-insensitive.
+- The i modifier makes the pattern case-insensitive.
 
 Step 4: Validate Email Format
 
 Example: Validate an email address
-
+```php
 <?php
 $pattern = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 $email = "example@domain.com";
@@ -61,16 +61,16 @@ if (preg_match($pattern, $email)) {
     echo "Invalid email!";
 }
 ?>
-
+```
 Explanation:
-	•	^[a-zA-Z0-9._%+-]+ matches the local part before @.
-	•	@[a-zA-Z0-9.-]+ matches the domain name.
-	•	\.[a-zA-Z]{2,}$ ensures a valid domain extension.
+- ^[a-zA-Z0-9._%+-]+ matches the local part before @.
+- @[a-zA-Z0-9.-]+ matches the domain name.
+- \.[a-zA-Z]{2,}$ ensures a valid domain extension.
 
 Step 5: Extract Data Using preg_match
 
 Example: Extract numbers from a string
-
+```php
 <?php
 $pattern = "/\d+/"; // Matches one or more digits
 $text = "The price is 1234 dollars.";
@@ -81,15 +81,15 @@ if (preg_match($pattern, $text, $matches)) {
     echo "No number found.";
 }
 ?>
-
+```
 Explanation:
-	•	\d+ matches digits.
-	•	The preg_match() function stores matches in the $matches array.
+- \d+ matches digits.
+- The preg_match() function stores matches in the $matches array.
 
 Step 6: Find All Matches Using preg_match_all
 
 Example: Find all words in a string
-
+```php
 <?php
 $pattern = "/\b\w+\b/"; // Matches whole words
 $text = "PHP is amazing!";
@@ -97,10 +97,10 @@ preg_match_all($pattern, $text, $matches);
 
 print_r($matches[0]); // Output all words
 ?>
-
+```
 Explanation:
-	•	\b denotes word boundaries.
-	•	\w+ matches word characters.
+- \b denotes word boundaries.
+- \w+ matches word characters.
 
 Step 7: Replace Text Using preg_replace
 
