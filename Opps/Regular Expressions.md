@@ -105,7 +105,7 @@ Explanation:
 Step 7: Replace Text Using preg_replace
 
 Example: Replace “PHP” with “Programming”
-
+```php
 <?php
 $pattern = "/PHP/";
 $replacement = "Programming";
@@ -114,14 +114,14 @@ $text = "PHP is awesome!";
 $result = preg_replace($pattern, $replacement, $text);
 echo $result;
 ?>
-
+```
 Explanation:
-	•	preg_replace() replaces all matches of the pattern.
+- preg_replace() replaces all matches of the pattern.
 
 Step 8: Advanced Example: Validate a Phone Number
 
 Example: Validate phone numbers in the format (123) 456-7890
-
+```php
 <?php
 $pattern = "/^\(\d{3}\) \d{3}-\d{4}$/";
 $phone = "(123) 456-7890";
@@ -132,16 +132,16 @@ if (preg_match($pattern, $phone)) {
     echo "Invalid phone number!";
 }
 ?>
-
+```
 Explanation:
-	•	\(\d{3}\) matches a 3-digit area code in parentheses.
-	•	\d{3}-\d{4} matches the rest of the number.
+- \(\d{3}\) matches a 3-digit area code in parentheses.
+- \d{3}-\d{4} matches the rest of the number.
 
 Summary
 
-	1.	Use preg_match() to check for patterns.
-	2.	Use preg_match_all() to find all matches.
-	3.	Use preg_replace() to replace patterns.
-	4.	Always test your regex for correctness.
+- Use preg_match() to check for patterns.
+- Use preg_match_all() to find all matches.
+- Use preg_replace() to replace patterns.
+- Always test your regex for correctness.
 
-Let me know if you’d like a specific example explained further!
+
