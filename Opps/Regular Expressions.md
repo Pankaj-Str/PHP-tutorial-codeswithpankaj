@@ -1,4 +1,4 @@
-PHP Regular Expressions: A Step-by-Step Example
+# PHP Regular Expressions
 
 Regular expressions (regex) are patterns used to match character combinations in strings. PHP provides support for regular expressions using the preg_match(), preg_match_all(), and preg_replace() functions. Here’s a step-by-step guide with examples:
 
